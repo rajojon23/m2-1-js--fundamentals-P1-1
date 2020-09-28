@@ -23,6 +23,30 @@ function exercise7() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
+    let time = 0;
+    let action = "";
+    for (let i = 0; i <= 23; i++) {
+
+
+
+      if (time>=22 || time<=5) {
+          action = "sleep"
+      }
+      else if(time==6 || time == 12 || time == 18){
+          action = "eat";
+      }
+      else {
+        action = "train";
+      }
+
+      console.log(`It's ${time}h. Time to ${action}!`);
+
+      time++;
+
+
+
+    }
+
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //
