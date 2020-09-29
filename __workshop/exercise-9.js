@@ -28,6 +28,32 @@ function exercise9() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
+  let result = ""; 
+  for (let i = 1; i <= 100; i++) {
+    
+    if ((i % 3 == 0) ) {
+      result = "Fizz";
+
+      if (i % 5 == 0 ) {
+        result = result.concat("Buzz");
+
+      }      
+      console.log(result);
+    }
+    else if ((i % 5 == 0) ) {
+      result = "Buzz";
+      if (i % 3 == 0 ) {
+        result = "Fizz".concat(result);
+      }
+      console.log(result);
+
+    }
+    else {
+      result = i;
+      console.log(result);
+    }
+  }
+
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //
